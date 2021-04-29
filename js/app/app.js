@@ -6,6 +6,10 @@ angular.module("meuModulo",['ngRoute'])
 		templateUrl:"templates/home.html",
 		controller:"indexController"
 	})
+	.when("/info",{
+		templateUrl:"templates/info.html",
+		controller:"infoController"
+	});
 
 	$routeProvider.otherwise({redirectTo:"/home"});
 
